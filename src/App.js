@@ -1,15 +1,17 @@
 import Navbar from "./Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Form from "./pages/Form";
 import Tech from "./Tech";
 import Vision from "./Vision";
-
 
 function App() {
   let Component
   switch (window.location.pathname) {
     case "/":
-      Component =<><About /><Tech />
+      Component =<>
+      <About />
+      <Tech />
       <Vision/>
       <Contact/>
     </>
@@ -27,10 +29,15 @@ function App() {
     case "/contact":
       Component =<Contact/>
       break
+    case "/signup":
+      Component =<Form/>
+      break
+   
   }
   return (
     <>
   <Navbar/>
+ 
   {Component}
  
   </>

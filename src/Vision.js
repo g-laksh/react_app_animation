@@ -18,7 +18,8 @@ export default function Vision(){
         <>
         <div className="container">
         <h1  >Vision</h1>
-    <button onClick={()=>{
+    <button className="submit"
+    onClick={()=>{
         setState(!state);
 
     }}
@@ -28,8 +29,8 @@ export default function Vision(){
     </button>
   
     {state && <Lottie options={defaultOptions}
-              height={400}
-              width={400}
+              height={600}
+              width={600}
              />}
              </div>
    

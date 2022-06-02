@@ -19,6 +19,10 @@ export default function Navbar() {
         <li>
         <a href="/contact">Contact</a>
         </li>
+        <li>
+        <a href="/signup">SignUp/Login</a>
+       
+        </li>
       </ul>
     </nav>
   )
